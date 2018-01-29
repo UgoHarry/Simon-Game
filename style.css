@@ -1,0 +1,32 @@
+
+.container {
+  margin-top: 50px;
+}
+
+.container .row{
+  height: 200px;
+}
+
+.container .row .col-md-6 {
+  text-align: center;
+}
+
+.container .row .col-md-6.green{
+  background-color: green;
+  border-top-left-radius: 50px;
+}
+
+.container .row .col-md-6.red{
+  background-color: red;
+  border-top-right-radius: 50px;
+}
+
+.container .row .col-md-6.yellow{
+  background-color: yellow;
+  border-bottom-left-radius: 50px;
+}
+
+.container .row .col-md-6.blue{
+  background-color: blue;
+  border-bottom-right-radius: 50px;
+}
