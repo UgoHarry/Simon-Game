@@ -5,6 +5,7 @@
   width: 650px;
   height: 530px;
   background: black;
+  border-radius: 50px;
 }
 
 .container .console {
@@ -17,7 +18,6 @@
   left: 50%;
   margin-left: -125px;
   margin-top: -125px;
-  border-radius: 50px;
 }
 
 .container .row{
