@@ -1,14 +1,33 @@
 
 .container {
   margin-top: 50px;
+  position: relative;
+  width: 650px;
+  height: 530px;
+  background: black;
+}
+
+.container .console {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  background: black;
+  /* border: 1px solid #ffffff; */
+  top: 50%;
+  left: 50%;
+  margin-left: -125px;
+  margin-top: -125px;
+  border-radius: 50px;
 }
 
 .container .row{
-  height: 200px;
+  height: 265px;
+  /* margin: 4px 0; */
 }
 
 .container .row .col-md-6 {
   text-align: center;
+  border: 15px solid black;
 }
 
 .container .row .col-md-6.green{
