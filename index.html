@@ -1,11 +1,12 @@
 <html>
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Passion+One:700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Simon Game</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container main">
     <div class="row">
       <div class="col-md-6 green">
         <h1></h1>
@@ -22,7 +23,31 @@
           <h1></h1>
       </div>
     </div>
-    <div class="console"></div>
+    <div class="console">
+      <h1 class = "brand">SIMON</h1>
+      <div class="controls">
+        <div class=" dials row">
+            <div class="col-sm-4">
+              <input type="text" name= "count" id="counter" value = "!!">
+            </div>
+            <div class="col-sm-4">
+              <div class="start"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="strict"></div>
+            </div>
+        </div>
+        <div class="switchbox">
+          <span class="switchoff">OFF</span> 
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+          <span class="switchon">ON</span>
+        </div>
+      </div>
+      
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
