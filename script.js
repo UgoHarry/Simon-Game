@@ -20,21 +20,31 @@ function init() {
   let score = 0;
   
   // create empty array variable for pattern
-  testPattern = [2,0];
+  testPattern = [];
 }
 
 init();
-
+var index=1;
 function startGame() {
   // create a random between 0-3
   let randomPick = Math.floor(Math.random() * 4);
   testPattern.push(randomPick);
-  // Loop through pattern array and play sounds
-  for (var i = 0; i < testPattern.length; i++) {
-    let beep = document.getElementById("audio" + testPattern[i]);
-    console.log(beep);
-    beep.play();
-  }
+  console.log("TestPattern");
+  console.log(testPattern);
+  //var index = 1;
+  var beep = document.getElementById("audio" + testPattern[0]);
+  beep.play();
+
+  beep.onended = function () {
+    if (index < testPattern.length) {
+      console.log("IT IS LESS");
+      beep =  document.getElementById("audio" + testPattern[index]);
+      beep.play();
+      index++;
+    }
+    console.log(index);
+
+  };
 
 }
 
