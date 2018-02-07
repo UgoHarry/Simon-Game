@@ -38,11 +38,12 @@ function startGame() {
   beep.onended = function () {
     if (index < testPattern.length) {
       console.log("IT IS LESS");
+      console.log("INDEX BEFORE: "+ index);
       beep =  document.getElementById("audio" + testPattern[index]);
       beep.play();
       index++;
     }
-    console.log(index);
+    console.log("INDEX AFTER??: " + index);
 
   };
 
