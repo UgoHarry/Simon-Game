@@ -24,33 +24,26 @@ function init() {
 }
 
 init();
-var index=1;
+var index = 1;
 function startGame() {
   // create a random between 0-3
   let randomPick = Math.floor(Math.random() * 4);
   testPattern.push(randomPick);
   console.log("TestPattern");
   console.log(testPattern);
-  //var index = 1;
+  var idx = 0;
+
+  var myInterval = setInterval(function() {
+   
+  });
+
   var beep = document.getElementById("audio" + testPattern[0]);
   beep.play();
 
-  beep.onended = function () {
-    if (index < testPattern.length) {
-      console.log("IT IS LESS");
-      console.log("INDEX BEFORE: "+ index);
-      beep =  document.getElementById("audio" + testPattern[index]);
-      beep.play();
-      index++;
-    }
-    console.log("INDEX AFTER??: " + index);
-
-  };
 
 }
 
 function checkPlay() {
-
 }
 
 function tune (id) {
