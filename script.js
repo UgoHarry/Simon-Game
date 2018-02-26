@@ -28,17 +28,23 @@ var index = 1;
 function startGame() {
   // create a random between 0-3
   let randomPick = Math.floor(Math.random() * 4);
+  // Push number to testPattern array
   testPattern.push(randomPick);
   console.log("TestPattern");
   console.log(testPattern);
-  var idx = 0;
+  var i = 0;
 
   var myInterval = setInterval(function() {
-   
+   var pos = testPattern[i];
+   colorTune(pos);
+   i++;
+   if(i == testPattern.length){
+     clearInterval(myInterval);
+   }
   });
 
-  var beep = document.getElementById("audio" + testPattern[0]);
-  beep.play();
+  // var beep = document.getElementById("audio" + testPattern[0]);
+  // beep.play();
 
 
 }
@@ -46,7 +52,14 @@ function startGame() {
 function checkPlay() {
 }
 
-function tune (id) {
-  var mySound = document.getElementById("audio" + id);
-  mySound.play();
+
+// Add bright colour and sound
+function colorTune (id) {
+  var quarter = document.getElementById(id);
+  quarter.className += "lighter";
+  setTimeout (function(){
+    quarter.className -= "lighter";
+  }, 500)
+  // var mySound = document.getElementById("audio" + id);
+  // mySound.play();
 }

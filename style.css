@@ -24,8 +24,17 @@
   border-top-left-radius: 50px;
 }
 
+.container.main .row .col-md-6.green.lighter{
+  background-color: #26ff26;
+  border-top-left-radius: 50px;
+}
+
 .container.main .row .col-md-6.red{
   background-color: red;
+  border-top-right-radius: 50px;
+}
+.container.main .row .col-md-6.red.lighter{
+  background-color: #ff6347;
   border-top-right-radius: 50px;
 }
 
@@ -34,11 +43,20 @@
   border-bottom-left-radius: 50px;
 }
 
+.container.main .row .col-md-6.yellow.lighter{
+  background-color: #ffff66;
+  border-bottom-left-radius: 50px;
+}
+
 .container.main .row .col-md-6.blue{
   background-color: #133bff;
   border-bottom-right-radius: 50px;
 }
 
+.container.main .row .col-md-6.blue.lighter{
+  background-color: #00bfff;
+  border-bottom-right-radius: 50px;
+}
 
 .container.main .console {
   width: 250px;
