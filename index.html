@@ -8,18 +8,18 @@
 <body>
   <div class="container main">
     <div class="row">
-      <div class="col-md-6 green" id="0">
+      <div class="col-md-6 green" id="0" onclick="userPlay(id)">
         <h1></h1>
       </div>
-      <div class="col-md-6 red" id="1" >
+      <div class="col-md-6 red" id="1" onclick="userPlay(id)">
           <h1></h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6 yellow" id="2">
+      <div class="col-md-6 yellow" id="2" onclick="userPlay(id)">
           <h1></h1>
       </div>
-      <div class="col-md-6 blue" id="3">
+      <div class="col-md-6 blue" id="3" onclick="userPlay(id)">
           <h1></h1>
       </div>
     </div>
@@ -40,7 +40,7 @@
         <div class="switchbox">
           <span class="switchoff">OFF</span> 
           <label class="switch">
-            <input type="checkbox" id="powerSwitch" onclick="tryy()">
+            <input type="checkbox" id="powerSwitch" onclick="start()">
             <span class="slider round"></span>
           </label>
           <span class="switchon">ON</span>
